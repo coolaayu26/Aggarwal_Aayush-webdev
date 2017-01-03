@@ -4,6 +4,7 @@ input.form-control {
 
 body {
     padding-top: 70px;
+    margin-bottom: 70px;
 }
 .navbar{
     background-color: #337ab7;
@@ -12,8 +13,13 @@ body {
 .heading{
     color: #2692ff;
 }
-.glyphicon-plus-sign{
-    float: right;
+/*.glyphicon-plus-sign{*/
+    /*float: right;*/
+/*}*/
+.glyphicon.glyphicon-cog{
+    font-size: 20px;
 }
+
+
 
 
