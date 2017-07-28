@@ -9,23 +9,20 @@
     function configuration($routeProvider) {
         $routeProvider
             .when("/login",{
-                templateUrl: "login.html"
+                templateUrl: "user/templates/login.html"
             })
 
             .when("/",{
-                templateUrl: "login.html"
+                templateUrl: "user/templates/login.html"
             })
 
             .when("/register",{
-                templateUrl: "register.html"
+                templateUrl: "user/templates/Register.html"
             })
             .when("/profile/:uid",{
-                templateUrl: "profile.html"
+                templateUrl: "user/templates/Profile.html"
             })
 
-            .when("/profile/:uid/website-list",{
-                templateUrl: "website-list.html"
-            })
     }
     var users = [
         {_id: "123", username: "alice",    password: "alice",    firstName: "Alice",  lastName: "Wonder"  },
