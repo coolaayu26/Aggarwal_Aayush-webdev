@@ -4,9 +4,12 @@
   "description": "Web Dev at Northeastern University",
   "main": "server.js",
   "dependencies": {
+    "angular": "^1.6.5",
+    "angular-route": "^1.2.32",
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
-    "mongoose": "^4.4.15"
+    "mongoose": "^4.4.15",
+    "route": "^0.2.5"
   },
   "devDependencies": {},
   "scripts": {
