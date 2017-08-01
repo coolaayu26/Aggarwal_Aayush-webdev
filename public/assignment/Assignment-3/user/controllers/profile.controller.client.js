@@ -7,9 +7,26 @@
         .module("WebAppMaker")
         .controller("profileController", profileController);
 
-    function profileController($scope, $routeParams, userService) {
+    function profileController($routeParams, userService) {
+        var model = this;
         var uid = $routeParams["uid"];
-        $scope.user = userService.findUserById(uid);
+
+        model.updateUser = updateUser;
+        model.unregister = unregister;
+
+        function init() {
+            model.user = userService.findUserById(uid);
+        }
+        init();
+
+        function updateUser() {
+
+        }
+
+        function unregister() {
+
+        }
+
 
     }
 

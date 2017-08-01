@@ -1,25 +1,25 @@
 
-<div ng-controller="loginController">
+<div>
 
     <div class="container">
-        <div class="alert alert-danger" ng-show="welcomeUser">Welcome Back {{welcomeUser.username}}</div>
-        <div class="alert alert-danger" ng-show="errorMessage">{{errorMessage}}</div>
+        <div class="alert alert-danger" ng-show="model.welcomeUser">Welcome Back {{model.welcomeUser.username}}</div>
+        <div class="alert alert-danger" ng-show="model.errorMessage">{{model.errorMessage}}</div>
         <h2 style="text-align: center"> Login </h2>
         <form>
             <div class="form-group">
                 <label>
                     Username/Email
                 </label>
-                <input id="Username/Email" type="text" class="form-control" placeholder="Username" ng-model="user.username">
+                <input id="Username/Email" type="text" class="form-control" placeholder="Username" ng-model="model.user.username">
             </div>
             <div class="form-group">
                 <label>
                     Password
                 </label>
-                <input id="Password" type="password" class="form-control" placeholder="Password" ng-model="user.password">
+                <input id="Password" type="password" class="form-control" placeholder="Password" ng-model="model.user.password">
             </div>
         </form>
-        <a class="btn btn-primary btn-block" ng-click="login(user)">Login</a>
+        <a class="btn btn-primary btn-block" ng-click="model.login(model.user)">Login</a>
         <a class="btn btn-success btn-block" href="#/register">Register</a>
     </div>
 </div>

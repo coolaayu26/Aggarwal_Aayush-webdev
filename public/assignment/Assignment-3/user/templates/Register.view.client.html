@@ -1,23 +1,27 @@
 
 <div class="container">
     <div class="form-group">
+        <div class="alert alert-danger" ng-show="model.error">{{model.error}}</div>
         <h1 style="text-align: left">Register</h1>
         <input type="text"
                class="form-control"
+               ng-model="user.username"
                placeholder="Username"/>
     </div>
     <div class="form-group">
         <input type="password"
                class="form-control"
+               ng-model="user.password"
                placeholder="Password"/>
     </div>
     <div class="form-group">
         <input type="password"
                class="form-control"
+               ng-model="user.password2"
                placeholder="Verify Password"/>
     </div>
     <a class="btn btn-primary btn-block"
-       href="#/profile/123">Register</a>
+       ng-click="model.registerUser(user)">Register</a>
     <a class="btn btn-danger  btn-block"
        href="#/login">Cancel</a>
 </div>

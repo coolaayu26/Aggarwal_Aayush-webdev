@@ -1,4 +1,4 @@
-<div ng-controller="profileController">
+<div>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-footer">
@@ -19,7 +19,7 @@
                 <label>
                     Username
                 </label>
-                <input id="Username/Email" type="text" class="form-control" placeholder="Username" ng-model="user.username">
+                <input id="Username/Email" type="text" class="form-control" placeholder="Username" ng-model="model.user.username">
             </div>
             <div class="form-group">
                 <label>
@@ -31,15 +31,17 @@
                 <label>
                     First Name
                 </label>
-                <input id="FirstName" type="text" class="form-control" placeholder="First Name" ng-model="user.firstName">
+                <input id="FirstName" type="text" class="form-control" placeholder="First Name" ng-model="model.user.firstName">
             </div>
             <div class="form-group">
                 <label>
                     Last Name
                 </label>
-                <input id="LastName" type="text" class="form-control" placeholder="Last Name" ng-model="user.lastName">
+                <input id="LastName" type="text" class="form-control" placeholder="Last Name" ng-model="model.user.lastName">
             </div>
             <a class="btn btn-primary btn-block">Websites</a>
+            <a class="btn btn-info btn-block" ng-click="model.updateUser();">Update User</a>
+            <a class="btn btn-success btn-block" ng-click="model.unregister();">UnRegister</a>
             <a class="btn btn-danger  btn-block"
                href="#/login">Logout</a>
         </form>

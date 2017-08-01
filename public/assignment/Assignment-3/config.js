@@ -9,18 +9,26 @@
     function configuration($routeProvider) {
         $routeProvider
             .when("/login",{
-                templateUrl: "user/templates/login.view.client.html"
+                templateUrl: "user/templates/login.view.client.html",
+                controller: "loginController",
+                controllerAs: "model"
             })
 
             .when("/",{
-                templateUrl: "user/templates/login.view.client.html"
+                templateUrl: "user/templates/login.view.client.html",
+                controller: "loginController",
+                controllerAs: "model"
             })
 
             .when("/register",{
-                templateUrl: "user/templates/Register.view.client.html"
+                templateUrl: "user/templates/Register.view.client.html",
+                controller: "registerController",
+                controllerAs: "model"
             })
             .when("/profile/:uid",{
-                templateUrl: "user/templates/profile.view.client.html"
+                templateUrl: "user/templates/profile.view.client.html",
+                controller: "profileController",
+                controllerAs: "model"
             })
 
     }
