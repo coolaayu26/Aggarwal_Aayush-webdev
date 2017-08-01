@@ -18,7 +18,8 @@
             "findUserByUsernameAndPassword" : findUserByUsernameAndPassword,
             "findUserById" : findUserById,
             "registerUser": registerUser,
-            "findUserByUsername": findUserbyUsername
+            "findUserByUsername": findUserbyUsername,
+            "updateUser": updateUser
         };
         return api;
 
@@ -27,6 +28,17 @@
             users.push(user);
             return user;
         }
+
+        function updateUser(userId, user) {
+            for(var u in users){
+                if(users[u]._id === userId){
+                    users[u] = user;
+                    return users[u];
+                }
+            }
+            return null
+        }
+
 
         function findUserbyUsername(username) {
             for(var u in users){

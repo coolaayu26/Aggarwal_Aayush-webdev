@@ -1,7 +1,7 @@
 #WebAppMaker
 --------------------------------------------------------------------
 A Single Page Web Application which: -
-•	can be used to make different website and add content what a user wants to save.
+•	allows users to create customized websites
 
 **Technologies Used**
 --------------------------------------------------------------------

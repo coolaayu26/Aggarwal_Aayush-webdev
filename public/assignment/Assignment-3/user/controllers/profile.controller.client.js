@@ -18,8 +18,8 @@
         }
         init();
 
-        function updateUser() {
-
+        function updateUser(user) {
+           model.user = userService.updateUser(user._id, user)
         }
 
         function unregister() {
