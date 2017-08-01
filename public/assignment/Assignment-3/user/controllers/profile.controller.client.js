@@ -10,7 +10,6 @@
     function profileController($routeParams, userService) {
         var model = this;
         var uid = $routeParams["uid"];
-
         model.updateUser = updateUser;
         model.unregister = unregister;
 
