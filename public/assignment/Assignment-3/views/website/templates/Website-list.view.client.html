@@ -1,0 +1,60 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!--<title>Websites</title>-->
+    <!--<link href="../../css/css/bootstrap.css" type="text/css" rel="stylesheet">-->
+    <!--<link href="../../css/style.css" type="text/css" rel="stylesheet">-->
+<!--</head>-->
+<!--<body>-->
+<div ng-controller="websiteListController">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-footer">
+                <a style="color: white" class="navbar-brand pull-left" href="../../user/templates/Profile.view.client.html">
+                    <span style="color: white" class="glyphicon glyphicon-chevron-left"></span>  Websites
+                </a>
+                <p class="navbar-text pull-right">
+                    <a href="#" class="navbar-link">
+                        <span style="color: white" class="glyphicon glyphicon-plus-sign"></span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </nav>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th class="lead">Name</th>
+            <th class="lead">Updated</th>
+            <th class="lead">Visits</th>
+            <th class="lead"><a href="#/user/{{model.uid}}/website/new"><span class="glyphicon glyphicon-plus"></span></a></th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="websites in model.websites">
+                <td class="lead">{{websites.name}}</td>
+                <td class="lead">2017-03-02</td>
+                <td class="lead">3,789,456</td>
+                <td class="lead"><a href="Website-edit.view.client.html"><span class="glyphicon glyphicon-cog"></span></a></td>
+            </tr>
+        </tbody>
+    </table>
+    {{model.websites}}
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container-fluid">
+            <div class="navbar-footer">
+                <a class="navbar-brand" href="../../user/templates/Profile.view.client.html">
+                </a>
+                <p class="navbar-text pull-right">
+                    <a href="#" class="navbar-link"></a>
+                    <span style="color: white" class="glyphicon glyphicon-user">
+                    </span>
+                </p>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--</body>-->
+<!--</html>-->
