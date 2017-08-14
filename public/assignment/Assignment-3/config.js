@@ -39,8 +39,20 @@
 
             .when("/user/:uid/website/new",{
                 templateUrl: "views/website/templates/Website-new.view.client.html",
-                // controller: "websiteNewController",
-                // controllerAs: "model"
+                controller: "websiteNewController",
+                controllerAs: "model"
+            })
+
+            .when("/user/:uid/website/:wid/page",{
+                templateUrl:"views/page/templates/page-list.view.client.html",
+                controller:"pageListController",
+                controllerAs: "model"
+            })
+
+            .when("/user/:uid/website/:wid/page/:pid/widget",{
+                templateUrl:"views/widget/templates/Widget-list.view.client.html",
+                controller: "widgetListController",
+                controllerAs: "model"
             })
 
     }

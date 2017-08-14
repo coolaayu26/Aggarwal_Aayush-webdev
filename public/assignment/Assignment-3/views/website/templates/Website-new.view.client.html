@@ -1,101 +1,40 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-    <!--<meta charset="UTF-8">-->
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <!--<title>Website-new</title>-->
-    <!--<link href="../../../../css/css/bootstrap.css" type="text/css" rel="stylesheet">-->
-    <!--<link href="../../../../css/style.css" type="text/css" rel="stylesheet">-->
-<!--</head>-->
-<!--<body>-->
-<div ng-controller="WebsiteListController">
+
+<!--<div ng-controller="WebsiteListController">-->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-5">
-                <nav class="navbar navbar-default navbar-fixed-top">
-                    <div class="container-fluid">
-                        <div class="navbar-footer col-lg-5 hidden-sm hidden-xs hidden-md">
-                            <a style="color: white" class="navbar-brand pull-left" href="../../user/templates/Profile.view.client.html">
-                                <span style="color: white" class="glyphicon glyphicon-chevron-left"></span>  Websites
-                            </a>
-                            <p class="navbar-text pull-right">
-                                <a href="#" class="navbar-link"></a>
-                                <span style="color: white" class="glyphicon glyphicon-check">
-                                </span>
-                            </p>
-                        </div>
-                        <div class="navbar-footer col-lg-7 col-xs-12">
-                            <a style="color: white" class="navbar-brand pull-left" href="Website-list.view.client.html">
-                                <span style="color: white" class="glyphicon glyphicon-chevron-left"></span> New Website
-                            </a>
-                            <p class="navbar-text pull-right">
-                                <a href="Website-list.view.client.html" class="navbar-link">
-                                    <span style="color: white" class="glyphicon glyphicon-check"></span>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </nav>
-                <table class="table table-responsive hidden-sm hidden-xs hidden-md">
-                    <tbody>
-                    <tr>
-                        <td>
-                            <span class="heading">Address Book App</span>
-                            <a href="#">
-                                    <span class=" pull-right glyphicon glyphicon-cog">
-                                    </span>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="heading">Blogger</span>
-                            <a href="#">
-                                    <span class=" pull-right glyphicon glyphicon-cog">
-                                    </span>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="heading">Blogging App</span>
-                            <a href="#">
-                                    <span class=" pull-right glyphicon glyphicon-cog">
-                                    </span>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="heading">Script Texting App</span>
-                            <a href="#">
-                                    <span class=" pull-right glyphicon glyphicon-cog">
-                                    </span>
-                            </a>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-lg-7">
-                <form>
-                    <div class="form-group">
-                        <a href="../../page/Page-list.html">
-                            <label>
-                                Name
-                            </label>
-                            <input id="Name" type="text" class="form-control" placeholder="Name">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-footer">
+                    <a style="color: white" class="navbar-brand pull-left" href="Website-list.view.client.html">
+                        <span style="color: white" class="glyphicon glyphicon-chevron-left"></span> New Website
+                    </a>
+                    <p class="navbar-text pull-right">
+                        <a href="Website-list.view.client.html" class="navbar-link">
+                            <span style="color: white" class="glyphicon glyphicon-check"></span>
                         </a>
-                    </div>
-                    <div class="form-group">
-                        <label for="Description">Description</label>
-                        <textarea class="form-control" rows="5" id="Description" placeholder="Description"></textarea>
-                    </div>
-                    <button class="btn btn-primary btn-block">Create</button>
-                    <button class="btn btn-danger  btn-block">Cancel</button>
+                    </p>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3 visible-lg">
+                <div ng-include="'views/website/templates/website-list.component.client.html'"></div>
+            </div>
+            <div class="col-xs-12 col-lg-9">
+                <form>
+                    <a href="../../page/templates/Page-list.view.client.html">
+                        <label>Name</label>
+                        <input id="Name" type="text" class="form-control" placeholder="Name">
+                    </a>
+                    <label for="Description">Description</label>
+                    <textarea class="form-control" rows="5" id="Description" placeholder="Description"></textarea>
+                    <a class="btn btn-primary btn-block" role="button">Create</a>
+                    <a class="btn btn-danger  btn-block" href="#/user/{{model.uid}}/website" role="button">Cancel</a>
                 </form>
             </div>
         </div>
+    </div>
         <nav class="navbar navbar-default navbar-fixed-bottom">
             <div class="container-fluid">
                 <div class="navbar-footer">
@@ -110,7 +49,5 @@
                 </div>
             </div>
         </nav>
-    </div>
-</div>
-<!--</body>-->
-<!--</html>-->
+
+<!--</div>-->

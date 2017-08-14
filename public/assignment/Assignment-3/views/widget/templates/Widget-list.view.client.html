@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Widget-list</title>
-    <link href="../../../css/css/bootstrap.css" type="text/css" rel="stylesheet">
-    <link href="../../../css/style.css" type="text/css" rel="stylesheet">
-</head>
-<body>
+
 <div class="container-fluid">
+    {{model.widgets}}
     <div class="row">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-footer">
-                    <a style="color: white" class="navbar-brand pull-left" href="../page/Page-list.html">
+                    <a style="color: white" class="navbar-brand pull-left" href="../../page/templates/Page-list.view.client.html">
                         <span style="color: white" class="glyphicon glyphicon-chevron-left"></span>  Widget
                     </a>
                     <p class="navbar-text pull-right">
@@ -49,7 +41,7 @@
         <nav class="navbar navbar-default navbar-fixed-bottom">
             <div class="container-fluid">
                 <div class="navbar-footer">
-                    <a class="navbar-brand" href="../user/templates/Profile.view.client.html">
+                    <a class="navbar-brand" href="../../user/templates/Profile.view.client.html">
                     </a>
                     <p class="navbar-text pull-left">
                         <a href="#" class="navbar-link"></a>
@@ -71,5 +63,3 @@
         </nav>
     </div>
 </div>
-</body>
-</html>
